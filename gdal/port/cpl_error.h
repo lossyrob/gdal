@@ -82,34 +82,34 @@ typedef enum
   CPLE_AWSObjectNotFound,
   CPLE_AWSAccessDenied,
   CPLE_AWSInvalidCredentials,
-  CPLE_AWSSignaturDoesNotMatch,
+  CPLE_AWSSignatureDoesNotMatch,
 } CPLErrorNum;
 
 #else
 
 typedef int CPLErrorNum;
 
-#define CPLE_None                       0
-#define CPLE_AppDefined                 1
-#define CPLE_OutOfMemory                2
-#define CPLE_FileIO                     3
-#define CPLE_OpenFailed                 4
-#define CPLE_IllegalArg                 5
-#define CPLE_NotSupported               6
-#define CPLE_AssertionFailed            7
-#define CPLE_NoWriteAccess              8
-#define CPLE_UserInterrupt              9
-#define CPLE_ObjectNull                 10
+#define CPLE_None                        0
+#define CPLE_AppDefined                  1
+#define CPLE_OutOfMemory                 2
+#define CPLE_FileIO                      3
+#define CPLE_OpenFailed                  4
+#define CPLE_IllegalArg                  5
+#define CPLE_NotSupported                6
+#define CPLE_AssertionFailed             7
+#define CPLE_NoWriteAccess               8
+#define CPLE_UserInterrupt               9
+#define CPLE_ObjectNull                  10
 
 /*
  * Filesystem-specific errors
  */
-#define CPLE_HttpResponse               11
-#define CPLE_AWSBucketNotFound          12
-#define CPLE_AWSObjectNotFound          13
-#define CPLE_AWSAccessDenied            14
-#define CPLE_AWSInvalidCredentials      15
-#define CPLE_AWSSignaturDoesNotMatch    16
+#define CPLE_HttpResponse                11
+#define CPLE_AWSBucketNotFound           12
+#define CPLE_AWSObjectNotFound           13
+#define CPLE_AWSAccessDenied             14
+#define CPLE_AWSInvalidCredentials       15
+#define CPLE_AWSSignatureDoesNotMatch    16
 
 /* 100 - 299 reserved for GDAL */
 
